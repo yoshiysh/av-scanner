@@ -6,11 +6,19 @@
 //
 
 import SwiftUI
+import AVScanner
 
 struct BasicExample: View {
     var body: some View {
-        Text("Basic Example")
-            .navigationTitle("Basic Example")
+        AVScannerView(types: [.qr]) { result in
+            if case .Success(let array) = result {
+                array.forEach { value in
+                    print("result: \(value.stringValue)")
+                }
+            }
+        }
+        .navigationTitle("Basic Example")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

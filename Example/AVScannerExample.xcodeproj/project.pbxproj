@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9223AD512ADE2BEA00760ED0 /* AVScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 9223AD502ADE2BEA00760ED0 /* AVScanner */; };
 		925508F02ADCE53B0072224F /* AVScannerExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925508EF2ADCE53B0072224F /* AVScannerExampleApp.swift */; };
 		925508F22ADCE53B0072224F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925508F12ADCE53B0072224F /* ContentView.swift */; };
 		925508F42ADCE53C0072224F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 925508F32ADCE53C0072224F /* Assets.xcassets */; };
@@ -28,17 +29,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9223AD512ADE2BEA00760ED0 /* AVScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		923437BF2ADE2A68009FCA9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		925508E32ADCE53B0072224F = {
 			isa = PBXGroup;
 			children = (
 				925508EE2ADCE53B0072224F /* AVScannerExample */,
 				925508ED2ADCE53B0072224F /* Products */,
+				923437BF2ADE2A68009FCA9B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +104,9 @@
 			dependencies = (
 			);
 			name = AVScannerExample;
+			packageProductDependencies = (
+				9223AD502ADE2BEA00760ED0 /* AVScanner */,
+			);
 			productName = AVScannerExample;
 			productReference = 925508EC2ADCE53B0072224F /* AVScannerExample.app */;
 			productType = "com.apple.product-type.application";
@@ -209,7 +222,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -266,7 +279,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -288,6 +301,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = AVScanner;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -319,6 +333,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = AVScanner;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -360,6 +375,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9223AD502ADE2BEA00760ED0 /* AVScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AVScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 925508E42ADCE53B0072224F /* Project object */;
 }
